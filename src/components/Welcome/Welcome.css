@@ -1,0 +1,118 @@
+/* ================================================
+   WELCOME SECTION - Premium Luxury Design
+   ================================================ */
+
+.wel-wrapper {
+  position: relative;
+  background: #ffffff;
+}
+
+.wel-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(to bottom, #C4A35A, transparent);
+}
+
+.wel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.wel-head {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  text-align: center;
+  margin: 0 auto 3rem;
+}
+
+.wwd-blocks {
+  width: 100%;
+  gap: 2rem;
+  display: flex;
+}
+
+.wwd-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #FAF8F5;
+  border: 1px solid rgba(196, 163, 90, 0.15);
+  transition: all 0.4s ease;
+}
+
+.wwd-block:hover {
+  border-color: rgba(196, 163, 90, 0.4);
+  box-shadow: 0 10px 40px rgba(196, 163, 90, 0.1);
+}
+
+/* Support Sections - Premium Styling */
+.wwd-support1 {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(196, 163, 90, 0.2);
+  padding: 3rem 0;
+}
+
+.wwd-support1 .primaryText {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 500;
+  color: #1A1A1A;
+  letter-spacing: -0.02em;
+}
+
+.wwd-support1 hr {
+  width: 60px;
+  height: 2px;
+  background: #C4A35A;
+  border: none;
+  margin-top: 1.25rem;
+}
+
+.wwd-support {
+  background: #ffffff;
+  padding: 2.5rem 0 3rem;
+}
+
+.wwd-support .secondaryText {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: #4A4A4A;
+  line-height: 1.9;
+}
+
+@media (max-width: 768px) {
+  .wel-wrapper::before {
+    height: 50px;
+  }
+  
+  .wel-head {
+    width: 100%;
+  }
+  
+  .wwd-blocks {
+    flex-direction: column;
+  }
+  
+  .wwd-support1,
+  .wwd-support {
+    padding: 2rem 0;
+  }
+}

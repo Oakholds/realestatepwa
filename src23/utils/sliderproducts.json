@@ -1,0 +1,80 @@
+[
+  {
+    "id": "0",
+    "name": "Acorn",
+    "price": "",
+    "detail": "PA specially curated ultra-luxury enclave intelligently designed with modern amenities",
+    "image": ["./Acornhouse3.png","./Acornhouse4.png","./Acornhouse1.jpg","./Acornhouse2.jpg"],
+    "facilities":{"bedrooms": 4, "parkings": 3, "bathrooms": 4},
+    "amenities":{"gym": 1, "spa": 1, "electricity": 1, "cinema": 1, "pool": 1, "security": 1 },
+    "address": "Asokoro ",
+    "city": "Asokoro",
+    "country" :  "Abuja",
+    "description" : "Introducing an exclusive enclave of 10 distinguished detached and semi-detached duplexes. This luxurious collection boasts opulent amenities, including a state-of-the-art gym, alluring pools, and integrated smart home features. Revel in a lifestyle of unparalleled elegance, where every detail embodies sophistication and refinement."
+  },
+  {
+    "id": "1",
+    "name": "The Oak Villa",
+    "price": "",
+    "detail": "A specially curated ultra-luxury enclave intelligently designed with modern amenities",
+    "image": ["../villa1.png","../villa2.png","../villa3.jpg"],
+    "facilities":{"bedrooms": 4, "parkings": 3, "bathrooms": 4},
+    "amenities":{"gym": 1, "spa": 1, "electricity": 1, "cinema": 1, "pool": 1, "security": 1 },
+    "address": "Asokoro ",
+    "city": "Asokoro",
+    "country" :  "Abuja",
+    "description" : "A specially curated ultra-luxury enclave intelligently designed with modern amenities infused with a high end technology system aimed to deliver the most rewarding ultra luxury living experience in Abuja. The first of its kind smart housing in Abuja specifically for those that have earned the spot"
+  },
+  {
+    "id": "2",
+    "name": "The Oak Place",
+    "price": "",
+    "detail": "An undiluted embodiment of luxury, style and sophistication",
+    "image": ["../r2.png"],
+    "facilities":{"bedrooms": 4, "parkings": 3, "bathrooms": 4},
+    "amenities":{"gym": 1, "spa": 1, "electricity": 1, "cinema": 1, "pool": 1, "security": 1 },
+    "address": "Glover road Road",
+    "city": "Ikoyi",
+    "country" :  "Lagos",
+    "description" : "An undiluted embodiment of luxury, style and sophistication. It’s designed to have a Home Automation System which controls cctv, energy management, safety and many other aspects of your home making your home smart and intelligent. The first of its kind smart housing estate in Nigeria"
+  },
+  {
+    "id": "3",
+    "name": "Kaylas Haven",
+    "price": "Sold Out",
+    "detail": "An undiluted embodiment of luxury, style and sophistication",
+    "image": ["../r77.png"],
+    "facilities":{"bedrooms": 4, "parkings": 3, "bathrooms": 4},
+    "amenities":{"gym": 1, "spa": 1, "electricity": 1, "cinema": 1, "pool": 1, "security": 1 },
+    "address": "Victoria Island",
+    "city": "Victoria Island",
+    "country" :  "Lagos",
+    "description" : "Massive opportunity to build your dream home at the base of Mummy Mountain in the 3 C's school district. Home is currently updated and very livable if your plans are to build at a later date.* Bonus * to live hillside without hillside restrictions in the town of PV. Run don't walk to capture this needle in a hay stack."
+  },
+  {
+    "id": "4",
+    "name": "The Oak Mews",
+    "price": "Sold Out",
+    "detail": "ikate elegushi lekki, (after 3rd roundabout, behind world oil filling station and blenco supermarket) Lagos",
+    "image": ["../r9.png"],
+    "facilities":{"bedrooms": 4, "parkings": 3, "bathrooms": 4},
+    "amenities":{"gym": 1, "spa": 1, "electricity": 1, "cinema": 1, "pool": 1, "security": 1 },
+    "address": "Ikate Lekki",
+    "city": "Lagos",
+    "country" :  "Nigeria",
+    "description" : "This development gives an aura of perfection and excellence. This luxury development offers you a lifestyle of exceptional comfort and class due to its stunning and easily accessible location, best quality standards, contemporary architecture and design, functional facilities and unique details. It is meticulously built with YOU in mind to create a truly luxurious and ideal family home living experience"
+  },
+  {
+    "id": "5",
+    "name": "The Oak Residence",
+    "price": "",
+    "detail": "It’s timeless designs draws its inspiration from modern architectural master pieces around the world",
+    "image": ["../res1(1).jpeg","../res1(2).jpeg","../res1(3).jpeg","../res1(4).jpeg"],
+    "facilities":{"bedrooms": 4, "parkings": 3, "bathrooms": 4},
+    "amenities":{"gym": 1, "spa": 1, "electricity": 1, "pool": 1, "security": 1 },
+    "address": "Musa Yar'adua street",
+    "city": "Victoria Island",
+    "country" :  "Lagos",
+    "description" : "It’s timeless designs draws its inspiration from modern architectural master pieces around the world. Enjoy a good selection of quality amenities, exquisite modern architecture, maximum security and unparalled service with breathtaking views of Lagos city from each floor of our magnificent development"
+  }
+]

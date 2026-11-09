@@ -1,0 +1,65 @@
+/* ================================================
+   PROPERTIES PAGE - Premium Luxury Design
+   ================================================ */
+
+.properties-wrapper {
+  background: #ffffff;
+  min-height: 60vh;
+}
+
+.properties-container {
+  gap: 3rem;
+  padding-top: 3rem;
+}
+
+.properties-container .search-bar {
+  width: clamp(16rem, 100%, 32rem);
+  border: 1px solid rgba(196, 163, 90, 0.2);
+  flex-wrap: nowrap;
+  background: #FAF8F5;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+}
+
+.properties-container .search-bar:focus-within {
+  border-color: #C4A35A;
+  box-shadow: 0 0 0 3px rgba(196, 163, 90, 0.1);
+}
+
+.properties-container .search-bar .button {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.75rem;
+  padding: 0.875rem 1.5rem;
+  letter-spacing: 0.1em;
+}
+
+.properties-container .search-bar input {
+  width: 70%;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9375rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #1A1A1A;
+}
+
+.properties-container .search-bar input::placeholder {
+  color: #8A8A8A;
+}
+
+/* Property Grid */
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .properties-container {
+    gap: 2rem;
+  }
+  
+  .properties-grid {
+    grid-template-columns: 1fr;
+  }
+}

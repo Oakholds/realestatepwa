@@ -1,0 +1,121 @@
+/* ================================================
+   FOOTER - Premium Luxury Design
+   ================================================ */
+
+.f-wrapper {
+  background-color: #0A0A0A;
+  position: relative;
+}
+
+.f-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(196, 163, 90, 0.4), transparent);
+}
+
+.f-container {
+  justify-content: space-between;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.f-left {
+  gap: 1.5rem;
+}
+
+.f-left img {
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.f-left .secondaryText {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.8;
+}
+
+.f-right {
+  gap: 0.75rem;
+}
+
+.f-right .primaryText {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.f-right .secondaryText {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.f-right .orangeText {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #C4A35A;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 1.5rem;
+}
+
+.f-menu {
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.f-menu span {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.f-menu span::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #C4A35A;
+  transition: width 0.3s ease;
+}
+
+.f-menu span:hover {
+  color: #C4A35A;
+}
+
+.f-menu span:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .f-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  
+  .f-left,
+  .f-right {
+    align-items: center;
+  }
+  
+  .f-menu {
+    justify-content: center;
+  }
+}

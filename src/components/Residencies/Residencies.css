@@ -1,0 +1,116 @@
+/* ================================================
+   RESIDENCIES SECTION - Premium Luxury Design
+   ================================================ */
+
+.r-wrapper {
+  background: #FAF8F5;
+  position: relative;
+  overflow: hidden;
+}
+
+.r-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(196, 163, 90, 0.3), transparent);
+}
+
+.r-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.r-head {
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.r-head .orangeText {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #C4A35A;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.r-head .orangeText::before {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: #C4A35A;
+}
+
+.r-head .primaryText {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  color: #1A1A1A;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Swiper Override */
+.swiper-horizontal {
+  overflow: visible !important;
+}
+
+/* Navigation Buttons */
+.r-buttons {
+  position: absolute;
+  gap: 0.75rem;
+  top: -4.5rem;
+  right: 0;
+  z-index: 8;
+}
+
+.r-buttons button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #1A1A1A;
+  border: 1px solid rgba(196, 163, 90, 0.3);
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.r-buttons button:hover {
+  background-color: #C4A35A;
+  color: #0A0A0A;
+  border-color: #C4A35A;
+}
+
+.r-buttons > :nth-child(1),
+.r-buttons > :nth-child(2) {
+  background-color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .r-head {
+    text-align: center;
+  }
+  
+  .r-head .orangeText::before {
+    display: none;
+  }
+  
+  .r-buttons {
+    position: relative;
+    top: 0;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,23 @@
+.f-container{
+    justify-content: space-between;
+    border-top: 1px solid rgba(0,0,0,0.148);
+}
+
+.f-left{
+    gap: 1rem;
+}
+
+.orangeText{
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
+}
+
+.f-menu{
+    gap: 1.5rem;
+    margin-top: 0.8rem;
+    font-weight: 500;
+}
+
+.f-wrapper{
+    background-color: var(--black);
+}

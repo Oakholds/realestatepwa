@@ -1,0 +1,127 @@
+/* ================================================
+   VALUE SECTION - Premium Luxury Design
+   ================================================ */
+
+.v-wrapper {
+  background: #FAF8F5;
+  position: relative;
+}
+
+.v-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(196, 163, 90, 0.3), transparent);
+}
+
+.v-container .image-container {
+  border: 1px solid rgba(196, 163, 90, 0.2);
+  overflow: hidden;
+}
+
+.v-container .image-container img {
+  transition: transform 0.6s ease;
+}
+
+.v-container .image-container:hover img {
+  transform: scale(1.03);
+}
+
+.v-container > div {
+  flex: 1;
+}
+
+.v-right {
+  gap: 1rem;
+}
+
+.v-right .orangeText {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.v-right .orangeText::before {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: #C4A35A;
+}
+
+/* Accordion Styles */
+.accordion {
+  margin-top: 2.5rem;
+  border: none;
+}
+
+.accordionItem {
+  background: #ffffff;
+  border: 1px solid rgba(196, 163, 90, 0.15);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordionItem.expanded {
+  border-color: rgba(196, 163, 90, 0.4);
+  box-shadow: 0 8px 30px rgba(196, 163, 90, 0.1);
+}
+
+.accordionButton {
+  background: #ffffff;
+  padding: 1.25rem 1.5rem;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.accordionButton:hover {
+  background: rgba(196, 163, 90, 0.03);
+}
+
+.icon {
+  padding: 0.75rem;
+  background: rgba(196, 163, 90, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  fill: #C4A35A;
+}
+
+.accordionButton .primaryText {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1A1A1A;
+}
+
+.accordionItem .secondaryText {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9375rem;
+  color: #4A4A4A;
+  line-height: 1.8;
+  padding: 0 1.5rem 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .v-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordionButton .primaryText {
+    font-size: 0.9rem;
+  }
+  
+  .accordionButton {
+    padding: 1rem;
+  }
+}

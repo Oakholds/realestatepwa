@@ -1,0 +1,167 @@
+/* ================================================
+   OUR VALUE / HOW IT WORKS - Premium Luxury Design
+   ================================================ */
+
+.hiw-wrapper {
+  padding-top: 0;
+  background: #ffffff;
+  position: relative;
+}
+
+.hiw-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(196, 163, 90, 0.3), transparent);
+}
+
+.hiw-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.infom {
+  max-width: 50rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.0625rem;
+  color: #4A4A4A;
+  line-height: 1.9;
+}
+
+.hiw-head {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: center;
+  align-items: center;
+  max-width: 58rem;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.hiw-head .orangeText {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hiw-head .orangeText::before,
+.hiw-head .orangeText::after {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: #C4A35A;
+}
+
+.hiw-head .primaryText {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  color: #1A1A1A;
+  letter-spacing: -0.02em;
+}
+
+.hiw-features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hiw-feature {
+  max-width: 52rem;
+  display: flex;
+  align-items: center;
+  background-color: #FAF8F5;
+  border: 1px solid rgba(196, 163, 90, 0.15);
+  padding: 2rem 2.5rem;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+
+.hiw-feature:hover {
+  border-color: rgba(196, 163, 90, 0.4);
+  box-shadow: 0 10px 40px rgba(196, 163, 90, 0.1);
+  transform: translateX(8px);
+}
+
+.hiw-feature .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.hiw-feature .detail > :nth-child(1) {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #1A1A1A;
+}
+
+.hiw-feature .detail > :nth-child(2) {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9375rem;
+  color: #4A4A4A;
+  line-height: 1.7;
+}
+
+.hiw-feature .icons img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 2rem;
+  padding: 1rem;
+  background: rgba(196, 163, 90, 0.1);
+  border: 1px solid rgba(196, 163, 90, 0.2);
+}
+
+.hiw-feature:nth-of-type(2) {
+  margin-left: 6rem;
+}
+
+.hiw-feature:nth-of-type(1),
+.hiw-feature:nth-of-type(3) {
+  margin-right: 6rem;
+}
+
+@media (max-width: 1280px) {
+  .hiw-feature {
+    max-width: 100%;
+  }
+
+  .hiw-feature:nth-of-type(2) {
+    margin-left: 0;
+  }
+  
+  .hiw-feature:nth-of-type(1),
+  .hiw-feature:nth-of-type(3) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hiw-feature {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+  
+  .hiw-feature .icons img {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hiw-feature .detail {
+    align-items: center;
+  }
+  
+  .hiw-feature:hover {
+    transform: translateY(-4px);
+  }
+}

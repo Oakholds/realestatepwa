@@ -1,0 +1,54 @@
+[
+  {
+    "id": "5",
+    "name": "Kaylas Haven 1",
+    "price": "Sold Out",
+    "detail": "A specially curated ultra-luxury enclave intelligently designed with modern amenities",
+    "image": "./kh11.jpeg",
+    "facilities":{"bedrooms": 4, "parkings": 3, "bathrooms": 4},
+    "amenities":{"gym": 1, "spa": 1, "electricity": 1, "cinema": 1, "pool": 1, "security": 1 },
+    "address": "Asokoro ",
+    "city": "Asokoro",
+    "country" :  "Abuja",
+    "description" : "Encounter the pinnacle of contemporary luxury in these striking terrace duplexes and semidetached duplexes. Embracing sleek design, flawless finishes, and awe-inspiring vistas, this residence presents a lifestyle unparalleled. Enter a realm of sophistication and relish in the comfort of expansive rooms, exquisite details, and a private terrace ideal for both relaxation and entertainment. Embrace a life adorned with elegance and cultivated refinement. "
+  },
+  {
+    "id": "6",
+    "name": "Kaylas Haven 2",
+    "price": "Sold Out",
+    "detail": "An undiluted embodiment of luxury, style and sophistication",
+    "image": "./kh21.jpeg",
+    "facilities":{"bedrooms": 4, "parkings": 3, "bathrooms": 4},
+    "amenities":{"gym": 1, "spa": 1, "electricity": 1, "cinema": 1, "pool": 1, "security": 1 },
+    "address": "Glover road Road",
+    "city": "Ikoyi",
+    "country" :  "Lagos",
+    "description" : "Experience the pinnacle of luxurious living in these 4 bedroom fully detached duplexes. With a perfect blend of comfort, functionality, and convenience, this development promises an amazing living experience. Prepare to be mesmerized by the exquisite design and unrivaled amenities, all delivering an unparalleled lifestyle of elegance and sophistication. Let the stunning interiors and breathtaking views embrace you, as you create everlasting memories in your own private paradise. Get ready to live a life of opulence and pure indulgence!"
+  },
+  {
+    "id": "7",
+    "name": "Lusso",
+    "price": "Sold Out",
+    "detail": "Massive opportunity to build your dream home at the base of Mummy Mountain",
+    "image": "./lusso.jpeg",
+    "facilities":{"bedrooms": 4, "parkings": 3, "bathrooms": 4},
+    "amenities":{"gym": 1, "spa": 1, "electricity": 1, "cinema": 1, "pool": 1, "security": 1 },
+    "address": "No 4 Ribadu Road",
+    "city": "Ikoyi",
+    "country" :  "Lagos",
+    "description" : "Unveiling the epitome of elegance and sophistication, this extraordinary 4 bedroom terrace duplexes will transport you to a world of refined living. Immerse yourself in luxury, from the palatial interiors to the meticulously landscaped grounds. Each corner tells a story of opulence and grandeur, offering an unmatched level of comfort and style"
+  },
+  {
+    "id": "8",
+    "name": "Nicoles Place",
+    "price": "Sold Out",
+    "detail": "ikate elegushi lekki, (after 3rd roundabout, behind world oil filling station and blenco supermarket) Lagos",
+    "image": "./np11.jpeg",
+    "facilities":{"bedrooms": 4, "parkings": 3, "bathrooms": 4},
+    "amenities":{"gym": 1, "spa": 1, "electricity": 1, "cinema": 1, "pool": 1, "security": 1 },
+    "address": "Ikate Lekki",
+    "city": "Lagos",
+    "country" :  "Nigeria",
+    "description" : "This development gives an aura of perfection and excellence. This luxury development offers you a lifestyle of exceptional comfort and class due to its stunning and easily accessible location, best quality standards, contemporary architecture and design, functional facilities and unique details. It is meticulously built with YOU in mind to create a truly luxurious and ideal family home living experience"
+  }
+]

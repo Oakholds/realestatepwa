@@ -1,0 +1,532 @@
+/* ================================================
+   OAK HOMES - Premium Luxury Real Estate
+   Brand Colors: Black, Gold (#C4A35A), White
+   ================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Brand Colors */
+  --oak-gold: #C4A35A;
+  --oak-gold-light: #D4B76A;
+  --oak-gold-dark: #A68B4A;
+  --oak-black: #0A0A0A;
+  --oak-charcoal: #1A1A1A;
+  --oak-dark-gray: #2A2A2A;
+  --oak-gray: #4A4A4A;
+  --oak-light-gray: #8A8A8A;
+  --oak-off-white: #F5F3EF;
+  --oak-white: #FFFFFF;
+  --oak-cream: #FAF8F5;
+  
+  /* Legacy variable mappings */
+  --primary: #1A1A1A;
+  --secondary: rgba(255, 255, 255, 0.78);
+  --black: #0A0A0A;
+  --green: #C4A35A;
+  --blue: #C4A35A;
+  --lightBlue: #FAF8F5;
+  --hcolor: #C4A35A;
+  --grey: #8A8A8A;
+  --frie: #FAF8F5;
+  
+  /* Gradients */
+  --gold-gradient: linear-gradient(135deg, #C4A35A 0%, #D4B76A 50%, #A68B4A 100%);
+  --dark-gradient: linear-gradient(180deg, #0A0A0A 0%, #1A1A1A 100%);
+  --blue-gradient: linear-gradient(135deg, #C4A35A 0%, #A68B4A 100%);
+  --orange-gradient: linear-gradient(135deg, rgba(196, 163, 90, 0.3) 0%, rgba(196, 163, 90, 0.1) 100%);
+  
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Shadows */
+  --shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+  --shadow-subtle: 0 2px 20px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 8px 40px rgba(0, 0, 0, 0.12);
+  --shadow-strong: 0 20px 60px rgba(0, 0, 0, 0.2);
+  --shadow-gold: 0 8px 40px rgba(196, 163, 90, 0.15);
+  
+  /* Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-quick: all 0.2s ease;
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--oak-charcoal);
+  background-color: var(--oak-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-quick);
+}
+
+a:hover {
+  color: var(--oak-gold);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ================================================
+   UTILITY CLASSES
+   ================================================ */
+
+.paddings {
+  padding: 2rem;
+}
+
+.innerWidth {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+
+.flexStart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flexEnd {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flexColCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexColStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flexColEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* ================================================
+   TYPOGRAPHY CLASSES
+   ================================================ */
+
+.primaryText {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--oak-charcoal);
+  letter-spacing: -0.02em;
+}
+
+.secondaryText {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--oak-light-gray);
+  line-height: 1.7;
+}
+
+.orangeText {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--oak-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.tag {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: var(--oak-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--oak-charcoal);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.sec-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  color: var(--oak-charcoal);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.description {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: var(--oak-gray);
+  line-height: 1.8;
+}
+
+.text {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--oak-light-gray);
+  line-height: 1.7;
+}
+
+.text2 {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--oak-gray);
+  line-height: 1.8;
+}
+
+/* ================================================
+   BUTTON STYLES
+   ================================================ */
+
+.button {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 1rem 2rem;
+  background: var(--oak-gold);
+  color: var(--oak-black);
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: var(--transition-smooth);
+}
+
+.button:hover {
+  background: var(--oak-gold-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+.button:hover::before {
+  left: 100%;
+}
+
+.button a {
+  color: inherit;
+}
+
+/* ================================================
+   APP CONTAINER
+   ================================================ */
+
+.App {
+  position: relative;
+  transition: var(--transition-smooth);
+  overflow: hidden;
+}
+
+/* ================================================
+   FEATURE BLOCKS
+   ================================================ */
+
+.block-features {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.block-feature {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  background: var(--oak-cream);
+  border: 1px solid rgba(196, 163, 90, 0.2);
+  transition: var(--transition-smooth);
+  border-radius: 0;
+}
+
+.block-feature:hover {
+  border-color: var(--oak-gold);
+  box-shadow: var(--shadow-gold);
+  transform: translateY(-4px);
+}
+
+.block-feature span {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--oak-charcoal);
+  line-height: 1.5;
+}
+
+/* Support Blocks */
+.wwd-support1 {
+  display: flex;
+  padding: 3rem;
+  border-bottom: 1px solid rgba(196, 163, 90, 0.2);
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  background: var(--oak-white);
+}
+
+.wwd-support1 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wwd-support1 hr {
+  width: 60px;
+  height: 2px;
+  background: var(--oak-gold);
+  border: none;
+  margin-top: 1rem;
+}
+
+.wwd-support {
+  display: flex;
+  padding: 3rem;
+  padding-top: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--oak-white);
+}
+
+.wwd-support > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.wwd-support > :nth-child(1) {
+  flex: 1;
+}
+
+.wwd-support > :nth-child(2) {
+  flex: 1.6;
+}
+
+/* ================================================
+   FORM STYLES
+   ================================================ */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--oak-charcoal);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-group input,
+.form-group textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(196, 163, 90, 0.3);
+  background: var(--oak-cream);
+  color: var(--oak-charcoal);
+  transition: var(--transition-quick);
+  width: 100%;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--oak-gold);
+  box-shadow: 0 0 0 3px rgba(196, 163, 90, 0.1);
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* ================================================
+   RESPONSIVE STYLES
+   ================================================ */
+
+@media (min-width: 1536px) {
+  .innerWidth {
+    max-width: 1400px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .paddings {
+    padding: 4rem 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .paddings {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .sec-title {
+    font-size: 1.5rem;
+  }
+
+  .primaryText {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+  
+  .paddings {
+    padding: 2rem 1.5rem;
+  }
+  
+  .block-features {
+    flex-direction: column;
+  }
+  
+  .wwd-support1,
+  .wwd-support {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .wwd-support > div {
+    align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .primaryText {
+    font-size: 1.25rem;
+  }
+
+  .orangeText {
+    font-size: 0.75rem;
+  }
+  
+  .button {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* ================================================
+   SCROLLBAR STYLING
+   ================================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--oak-charcoal);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--oak-gold);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--oak-gold-light);
+}
+
+/* ================================================
+   SELECTION STYLING
+   ================================================ */
+
+::selection {
+  background: var(--oak-gold);
+  color: var(--oak-black);
+}
+
+::-moz-selection {
+  background: var(--oak-gold);
+  color: var(--oak-black);
+}

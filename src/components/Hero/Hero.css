@@ -1,0 +1,469 @@
+/* ================================================
+   HERO SECTION - Premium Luxury Design
+   ================================================ */
+
+/* Loading State */
+.hero-loading {
+  width: 100%;
+  height: 100vh;
+  background: #0A0A0A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.loading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.loading-logo {
+  width: 120px;
+  height: auto;
+  opacity: 0.9;
+  animation: logoPulse 2s ease-in-out infinite;
+}
+
+@keyframes logoPulse {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+.loading-bar-container {
+  width: 200px;
+  height: 2px;
+  background: rgba(196, 163, 90, 0.2);
+  overflow: hidden;
+}
+
+.loading-bar {
+  height: 100%;
+  background: #C4A35A;
+  transition: width 0.3s ease;
+}
+
+.loading-text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/* Swiper fixes for overlap */
+.mySwiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.mySwiper .swiper-slide {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.swiper-slide-active {
+  z-index: 2;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+  z-index: 1;
+}
+
+.hero-wrapper,
+.hero-wrapper02,
+.hero-wrapper03,
+.hero-wrapper04 {
+  color: white;
+  position: relative;
+  padding-bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.hero-wrapper {
+  background-image: url('../abb.jpg');
+}
+
+.hero-wrapper02 {
+  background-image: url('../hero-image.png');
+}
+
+.hero-wrapper03 {
+  background-image: url('../Acornhouse2.jpg');
+}
+
+.hero-wrapper04 {
+  background-image: url('../lusso2.jpg');
+}
+
+/* Premium Dark Overlay */
+.hero-wrapper::before,
+.hero-wrapper02::before,
+.hero-wrapper03::before,
+.hero-wrapper04::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 10, 10, 0.85) 0%,
+    rgba(10, 10, 10, 0.6) 50%,
+    rgba(10, 10, 10, 0.75) 100%
+  );
+  z-index: 1;
+}
+
+/* Gold Accent Line */
+.hero-wrapper::after,
+.hero-wrapper02::after,
+.hero-wrapper03::after,
+.hero-wrapper04::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(196, 163, 90, 0.5) 50%,
+    transparent 100%
+  );
+  z-index: 2;
+}
+
+/* Background Video */
+.bg-video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Hero Container */
+.hero-container {
+  overflow: hidden !important;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100vh;
+  padding-bottom: 6rem;
+  position: relative;
+  z-index: 10;
+}
+
+/* Hero Left Content */
+.hero-left {
+  gap: 1.5rem;
+  z-index: 23;
+  padding-left: 2%;
+  max-width: 600px;
+}
+
+/* Hero Title */
+.hero-title {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title > h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.1;
+  color: #C4A35A;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.hero-title > h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: clamp(0.95rem, 2vw, 1.125rem);
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 500px;
+  letter-spacing: 0.02em;
+}
+
+.hero-title > h2 > span {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/* Hero Description */
+.hero-des {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Hero Buttons */
+.hero-button {
+  display: flex;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-button .button {
+  background: #C4A35A;
+  color: #0A0A0A;
+  padding: 1.125rem 2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  border: none;
+}
+
+.hero-button .button:first-child {
+  background: #C4A35A;
+  color: #0A0A0A;
+}
+
+.hero-button .button:last-child {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(196, 163, 90, 0.5);
+}
+
+.hero-button .button:last-child:hover {
+  background: rgba(196, 163, 90, 0.1);
+  border-color: #C4A35A;
+}
+
+/* Hero Stats */
+.stats {
+  width: 100%;
+  justify-content: flex-start;
+  gap: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(196, 163, 90, 0.2);
+}
+
+.hero-stats {
+  text-align: left;
+}
+
+.hero-stats > :nth-child(1) {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.hero-stats > :nth-child(1) > :last-child {
+  color: #C4A35A;
+  font-size: 1.5rem;
+}
+
+.secondaryText2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 0.25rem;
+}
+
+/* Hero Right - Image */
+.hero-right {
+  z-index: 23;
+  padding-top: 7%;
+}
+
+.image-container {
+  width: 28rem;
+  height: 32rem;
+  overflow: hidden;
+  border: 1px solid rgba(196, 163, 90, 0.3);
+  position: relative;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 1px solid rgba(196, 163, 90, 0.5);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.image-container > img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-container:hover > img {
+  transform: scale(1.05);
+}
+
+/* Search Bar */
+.search-bar {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(196, 163, 90, 0.2);
+  padding: 0.75rem 1.25rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.search-bar > input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+}
+
+.search-bar > input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Decorative Circle - Now Gold */
+.orange-circle {
+  height: 6rem;
+  width: 6rem;
+  background: linear-gradient(135deg, rgba(196, 163, 90, 0.3) 0%, rgba(196, 163, 90, 0.1) 100%);
+  border-radius: 999px;
+  position: absolute;
+  left: 80%;
+  top: -23%;
+  z-index: -1;
+  animation: pulse 3s ease-in-out infinite, fadeInOut 4s ease-in-out infinite;
+  border: 1px solid rgba(196, 163, 90, 0.2);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* ================================================
+   RESPONSIVE STYLES
+   ================================================ */
+
+@media (max-width: 1024px) {
+  .hero-container {
+    padding-bottom: 4rem;
+  }
+  
+  .image-container {
+    width: 22rem;
+    height: 26rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+  }
+  
+  .hero-right {
+    display: none;
+  }
+  
+  .hero-left {
+    max-width: 100%;
+    padding: 0 1rem;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .hero-title > h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  .hero-title > h2 {
+    text-align: center;
+  }
+  
+  .hero-button {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .stats {
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .hero-stats {
+    text-align: center;
+  }
+  
+  .hero-stats > :nth-child(1) {
+    font-size: 2rem;
+    justify-content: center;
+  }
+  
+  .orange-circle {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title > h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .hero-title > h2 {
+    font-size: 0.9rem;
+  }
+  
+  .hero-button .button {
+    padding: 1rem 1.5rem;
+    font-size: 0.75rem;
+  }
+  
+  .stats {
+    gap: 1.5rem;
+  }
+  
+  .hero-stats > :nth-child(1) {
+    font-size: 1.75rem;
+  }
+  
+  .secondaryText2 {
+    font-size: 0.65rem;
+  }
+}
